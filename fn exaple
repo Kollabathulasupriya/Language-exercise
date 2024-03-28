@@ -1,0 +1,9 @@
+def example1():
+    for i in range(11):
+        print("india", end=' ')
+def example2():
+    for i in range(11):
+        print(i, end=' ')
+example2()
+example1()
+            
