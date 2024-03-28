@@ -1,3 +1,0 @@
-#zfill
-str='3'
-print(str.zfill(10))

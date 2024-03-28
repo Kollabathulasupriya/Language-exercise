@@ -1,0 +1,18 @@
+#zfill
+str='3'
+print(str.zfill(10))
+#lower upper
+str='supriya'
+print(str.upper())
+str='suppu'
+print(str.lower())
+#max min
+str='stUdents'
+print(max(str))
+str='supriyA'
+print(min(str))
+#replace
+str="hi hi hello hi"
+print(str.replace('hello','bye'))
+print(ord('r'))
+print(chr(67))
