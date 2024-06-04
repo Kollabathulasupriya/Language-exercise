@@ -1,0 +1,9 @@
+def expo(a,b):
+    if b==0:
+        return 1
+    else:
+        return a*expo(a,b-1)
+a=5
+b=3
+x=expo(a,b)
+print(x)
