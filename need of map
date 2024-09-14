@@ -1,0 +1,10 @@
+def addDot(ch):
+    return ch + '.'
+
+str = input()
+for i in str:
+    print(addDot(i))
+
+
+output = list(map(addDot, str))
+print(output)
