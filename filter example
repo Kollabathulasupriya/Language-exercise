@@ -1,0 +1,13 @@
+def checkGradeA(marks):
+    return "Hello"
+
+    '''if marks >= 75:
+        return True
+    return False'''
+
+    # return marks >= 75
+
+list1 = [81, 72, 63, 94, 51]
+
+output = list(filter(checkGradeA, list1))
+print(output)
