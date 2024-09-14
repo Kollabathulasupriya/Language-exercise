@@ -1,0 +1,15 @@
+def checkPrime(num):
+    if num < 2:
+        return False
+    for i in range(2, num // 2 + 1):
+        if num % i == 0:
+            return False
+    return True
+
+
+start = int(input())
+stop = int(input())
+
+for num in range(start, stop + 1):
+    if checkPrime(num):
+        print(num)
