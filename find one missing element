@@ -1,0 +1,12 @@
+def findOne(list1):
+    size = len(list1)
+    xor = 0
+    for i in range(size):
+        xor ^= list1[i]
+    return xor
+# Time Complexity : O(n)
+
+size = int(input())
+list1 = list(map(int, input().split()))
+result = findOne(list1)
+print(result)
