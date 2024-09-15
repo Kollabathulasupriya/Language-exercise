@@ -1,0 +1,24 @@
+def findCount(list1, key):
+    size = len(list1)
+    count = 0
+    for i in range(size):
+        if list1[i] == key:
+            count += 1
+    return count
+
+def findMostRepeated(list1):
+    size = len(list1)
+    mostRepEle = list1[0]
+    maxCount = 1
+    for i in range(1, size):
+        currEleCount = findCount(list1, list1[i]) 
+        if currEleCount > maxCount:
+            mostRepEle = list1[i]
+            maxCount = currEleCount
+    return mostRepEle
+    #return [mostRepEle, maxCount]
+
+size = int(input())
+list1 = list(map(int, input().split()))
+print(findMostRepeated(list1))
+
