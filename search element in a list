@@ -1,0 +1,12 @@
+def search(list1, key):
+    size = len(list1)
+    for i in range(size):
+        if list1[i] == key:
+            return "Yes"
+    return "No"
+# Time Complexity : O(n)
+
+size = int(input())
+list1 = list(map(int, input().split()))
+key = int(input())
+print(search(list1, key))
