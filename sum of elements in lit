@@ -1,0 +1,16 @@
+def findSum(list1):
+    size = len(list1)
+    sum = 0
+    for i in range(size):
+        sum += list1[i]
+    return sum
+
+size = int(input())
+list1 = list(map(int, input().split()))
+print(findSum(list1))
+
+#Time Complexity : O(n)
+
+print(sum(list1))
+#Time Complexity : O(n)
+
