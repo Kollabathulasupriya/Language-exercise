@@ -1,0 +1,17 @@
+def removeDuplicates(list1):
+    size = len(list1)
+    output = []
+    for i in range(size):
+        if output.count(list1[i]) == 0:
+            output.append(list1[i])
+    return output
+# Time Complexity : O(n * n)
+
+
+size = int(input())
+list1 = list(map(int, input().split()))
+result = removeDuplicates(list1)
+print(result)
+print(*result)
+for i in result:
+    print(i, end = " ")
